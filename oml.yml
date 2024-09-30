@@ -1,0 +1,32 @@
+# The project parameters
+project:
+   name: Template
+   description: This is the template project
+
+# The maven parameter
+maven:
+   group: io.opencaesar
+   artifact: template
+   version: 1.0.0
+
+# The list of dependencies
+dependencies:
+   - io.opencaesar.ontologies:core-vocabularies:5.+
+
+# The list of source oml paths
+sources:
+   - src/main/oml
+
+# The list of datasets 
+datasets:
+   default:
+      url: http://localhost:3030/description
+      iri: http://opencaesar.io/description-bundle
+      entailments:
+         classes: ALL_SUBCLASS
+         properties: INVERSE_PROPERTY | ALL_SUBPROPERTY
+         individuals: ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS
+      doNotUpdate:
+         - build/oml
+      #queries: src/main/sparql
+         

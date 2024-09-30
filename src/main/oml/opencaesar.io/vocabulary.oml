@@ -1,0 +1,26 @@
+vocabulary <http://opencaesar.io/vocabulary#> as v {
+
+	concept Vehicle
+	
+	concept Axle
+
+	concept Wheel
+	
+	relation hasAxle [
+		from Vehicle
+		to Axle
+		inverse functional
+	]
+	
+	relation hasRightWheel [
+		from Axle
+		to Wheel
+		functional
+	]
+
+	relation hasLeftWheel [
+		from Axle
+		to Wheel
+		functional
+	]
+}

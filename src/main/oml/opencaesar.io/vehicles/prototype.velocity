@@ -1,0 +1,23 @@
+description <http://opencaesar.io/vehicles/prototype$t#> as prototype$t {
+
+	uses <http://opencaesar.io/vocabulary#> as v
+
+	instance vehicle : v:Vehicle [
+		#foreach ($i in [1..$n])
+		v:hasAxle [
+			#set( $r = $i * 2 - 1 )
+			v:hasRightWheel wheel$r
+			#set( $l = $i * 2 )
+			v:hasLeftWheel wheel$l
+		]
+		#end
+	]
+	
+	#foreach ($i in [1..$n])
+	#set( $r = $i * 2 - 1 )
+	instance wheel$r : v:Wheel
+	#set( $l = $i * 2 )
+	instance wheel$l : v:Wheel
+	#end
+
+}

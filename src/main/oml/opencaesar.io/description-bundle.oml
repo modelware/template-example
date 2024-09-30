@@ -1,0 +1,8 @@
+description bundle <http://opencaesar.io/description-bundle#> as db {
+	
+	uses <http://opencaesar.io/vocabulary-bundle#>
+	
+	includes <http://opencaesar.io/vehicles/prototypeA#>
+	includes <http://opencaesar.io/vehicles/prototypeB#>
+
+}

@@ -1,0 +1,5 @@
+vocabulary bundle <http://opencaesar.io/vocabulary-bundle#> as vb {
+		
+	includes <http://opencaesar.io/vocabulary#>
+
+}
