@@ -1,3 +1,3 @@
-#  OML Vocabularies for State Analysis
+#  Template example
 
-These vocabularies require the Eclipse-based [OML Rosetta](https://github.com/opencaesar/oml-rosetta).
+This example demonstrates the use of oml-velocity task to instantiate OML ontologies from velocity templates.
